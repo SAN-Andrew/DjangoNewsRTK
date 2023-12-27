@@ -68,8 +68,8 @@ class Migration(migrations.Migration):
                 ('tags', models.ManyToManyField(blank=True, related_name='tags', to='women.tagpost', verbose_name='Теги')),
             ],
             options={
-                'verbose_name': 'Известные женщины',
-                'verbose_name_plural': 'Известные женщины',
+                'verbose_name': 'Игровые персонажи',
+                'verbose_name_plural': 'Игровые персонажи',
                 'ordering': ['-time_create'],
                 'indexes': [models.Index(fields=['-time_create'], name='women_women_time_cr_9f33c2_idx')],
             },

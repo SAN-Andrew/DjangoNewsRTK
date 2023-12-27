@@ -5,13 +5,13 @@ from .models import Women, Category
 
 
 class MarriedFilter(admin.SimpleListFilter):
-    title = "Статус женщин"
+    title = "Статус"
     parameter_name = 'status'
 
     def lookups(self, request, model_admin):
         return [
-            ('married', 'Замужен'),
-            ('single', 'Не замужен'),
+            ('married', 'Старый'),
+            ('single', 'Новый'),
         ]
 
     def queryset(self, request, queryset):
